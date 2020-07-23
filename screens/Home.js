@@ -41,6 +41,19 @@ const Home = (props) => {
     if (props.creator === event.creator) {
       return (
         <View key={`event${i}`} style={styles.myEventCard}>
+          <View style={styles.eventDetails}>
+            <Text>Event Name: {event.name}</Text>
+            <Text>Event Location: {event.location}</Text>
+            <Text>Event Date: {event.date}</Text>
+            <TouchableOpacity
+              onPress={() => {
+                event.owner = true;
+                props.navigation.navigate('CardDetails', event);
+              }}
+            >
+              <Text color={'blue'}>More Details</Text>
+            </TouchableOpacity>
+          </View>
           <View style={styles.deleteButton}>
             <TouchableOpacity
               title="X"
@@ -59,17 +72,6 @@ const Home = (props) => {
               user={props.creator}
             />
           </View>
-          <Text>Event Name: {event.name}</Text>
-          <Text>Event Location: {event.location}</Text>
-          <Text>Event Date: {event.date}</Text>
-          <TouchableOpacity
-            onPress={() => {
-              event.owner = true;
-              props.navigation.navigate('CardDetails', event);
-            }}
-          >
-            <Text color={'blue'}>More Details</Text>
-          </TouchableOpacity>
         </View>
       );
     } else {
@@ -137,11 +139,9 @@ const styles = StyleSheet.create({
     overflow: 'scroll',
     maxHeight: 500,
   },
-  deleteButton: {
-    flex: 0,
-    alignItems: 'flex-end',
-  },
+
   myEventCard: {
+    flexDirection: 'row',
     backgroundColor: 'lightgray',
     borderWidth: 1,
     borderRadius: 3,
@@ -158,6 +158,16 @@ const styles = StyleSheet.create({
     height: 100,
     overflow: 'scroll',
     padding: 5,
+  },
+  eventDetails: {
+    flexDirection: 'column',
+    justifyContent: 'space-evenly',
+  },
+  deleteButton: {
+    flex: 0,
+    position: 'absolute',
+    right: 10,
+    top: 5,
   },
   shareButton: {
     flex: 0,
