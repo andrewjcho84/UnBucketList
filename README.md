@@ -4,12 +4,11 @@
 
 ### Sign in or sign up!
 
-<div style="display:flex">
-<img src="assets/signin.jpg" width="200">
-<img src="assets/signup.jpg" width="200">
-</div>
+![signin](/assets/signin.jpg) ![signup](/assets/signup.jpg)
 
-### Send invites to your friends!
+### Create custom events and send invites to your friends!
+
+![eventlist](/assets/eventlist.jpg) ![eventdetails](/assets/eventdetails.jpg) ![eventshare](/assets/eventshare.jpg)
 
 <img src="assets/eventshare.jpg" width="200">
 
