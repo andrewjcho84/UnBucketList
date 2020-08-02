@@ -4,8 +4,10 @@
 
 ### Sign in or sign up!
 
+<div style="display:flex">
 <img src="assets/signin.jpg" width="200">
 <img src="assets/signup.jpg" width="200">
+</div>
 
 ### Send invites to your friends!
 
