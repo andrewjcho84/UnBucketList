@@ -4,7 +4,7 @@
 
 ### Sign in or sign up!
 
-![signin](/assets/signin.jpg =200x)
+<img src="assets/signin.jpg" width="200">
 
 ### Send invites to your friends!
 
