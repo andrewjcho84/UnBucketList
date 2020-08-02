@@ -5,8 +5,11 @@
 ### Sign in or sign up!
 
 <img src="assets/signin.jpg" width="200">
+<img src="assets/signup.jpg" width="200">
 
 ### Send invites to your friends!
+
+<img src="assets/eventshare.jpg" width="200">
 
 Get Started:
 
