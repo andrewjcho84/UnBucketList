@@ -62,7 +62,7 @@ const SignIn = (props) => {
           onChangeText={(e) => {
             setUsername(e);
           }}
-          placeholder={'Username'}
+          placeholder="Username"
           placeholderTextColor="#91a6b4"
           style={styles.input}
         />
@@ -71,7 +71,7 @@ const SignIn = (props) => {
           onChangeText={(pw) => {
             setPassword(pw);
           }}
-          placeholder={'Password'}
+          placeholder="Password"
           placeholderTextColor="#91a6b4"
           secureTextEntry={true}
           style={styles.input}

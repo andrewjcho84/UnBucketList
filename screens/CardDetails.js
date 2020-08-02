@@ -53,19 +53,21 @@ const CardDetails = (props) => {
         {props.creator === creator ? (
           <View style={styles.buttonContainer}>
             <Button
-              title='Edit Event'
+              title="Edit Event"
               onPress={() => {
                 props.navigation.navigate('EditEvent', props.route.params);
-              }}></Button>
+              }}
+            ></Button>
             <View style={styles.deleteButton}>
               <Button
-                title='Delete Event'
-                color='red'
+                title="Delete Event"
+                color="red"
                 onPress={() => {
                   console.log('Delete opacity clicked');
                   props.deleteEvent(props.username, event_id);
                   props.navigation.navigate('Home');
-                }}>
+                }}
+              >
                 <Text style={styles.delete}>X</Text>
               </Button>
             </View>
@@ -94,6 +96,7 @@ const styles = StyleSheet.create({
   body: {
     display: 'flex',
     justifyContent: 'space-between',
+    backgroundColor: '#334E68',
     borderWidth: 1,
     borderRadius: 5,
     borderColor: '#9FB3C8',
