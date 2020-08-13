@@ -101,6 +101,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     borderColor: '#9FB3C8',
     padding: 15,
+    maxWidth: '90%',
   },
   eventLabel: {
     color: '#829AB1',
